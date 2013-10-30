@@ -2,10 +2,7 @@ from lxml import etree
 import urllib2
 
 def varrerArvore(arvore, tab = "", count = 0):
-    if( str( arvore.tag ).upper() == "IMG" ):
-        teste = str( arvore.attrib ).split( "'src':" )
-        if( teste!=None ):
-            print( teste[1] )
+    print( "%s%s" % ( tab, str( arvore.tag )  ) )
     
     for no in arvore.getchildren():
         varrerArvore(no, tab + " ", count )
