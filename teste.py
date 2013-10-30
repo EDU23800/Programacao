@@ -11,8 +11,3 @@ downloadHtml = urllib2.urlopen("http://www.pwi.com.br")
 
 html = etree.HTML( downloadHtml.read() )
 varrerArvore(html)
-
-#teste = open("html.html").read()
-#if( element.tag == "img" ):
-#   print( "%s", str( element.attrib ) )
-# element.tag, element.text, element.tail, element.attrib
